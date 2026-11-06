@@ -14,13 +14,16 @@ def main():
         user_num = int(usernum_str)
         sum = 0
         counter = 0
-        while counter <= user_num:
-            sum = sum + counter
-            counter = counter + 1
-            print("{} through the loop".format(counter))
+        if user_num <= 0:
+            print("The number has to be more than zero. Please, enter a new number")
+        else:
+            while counter <= user_num:
+                sum = sum + counter
+                counter = counter + 1
+                print("{} through the loop".format(counter))
 
-        # Display the sum to the user
-        print("\nThe sum of numbers from 0 to {} is {}".format(user_num, sum))
+                # Display the sum to the user
+                print("\nThe sum of numbers from 0 to {} is {}".format(user_num, sum))
 
     # If the number is not an integer, tell the user to enter a valid one
     except ValueError:
