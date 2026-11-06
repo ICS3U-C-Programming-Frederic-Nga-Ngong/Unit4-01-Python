@@ -24,7 +24,7 @@ def main():
 
     # If the number is not an integer, tell the user to enter a valid one
     except ValueError:
-        print("{} is not a valid integer. Please enter a new one.")
+        print("{} is not a valid integer. Please enter a new one.".format(usernum_str))
 
     # Whatever the outcome, thank to user for using the code
     print("\nThanks for using the code")
